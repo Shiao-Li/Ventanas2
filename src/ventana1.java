@@ -1,6 +1,6 @@
 import javax.swing.*;
 
-public class ventana1 {
+public class ventana1 extends JFrame{
     private JTextField ingreseSuNombreTextField;
     private JButton okButton;
     private JPasswordField contraseñaPasswordField;
@@ -13,8 +13,11 @@ public class ventana1 {
     public static void main(String[] args) {
         JFrame frame = new JFrame("ventana1");
         frame.setContentPane(new ventana1().panel1);
+        frame.setSize(400,400);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.pack();
         frame.setVisible(true);
+
+
     }
 }
